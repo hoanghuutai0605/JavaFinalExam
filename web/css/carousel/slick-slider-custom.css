@@ -1,0 +1,190 @@
+
+        .jd-slider {
+            margin: 50px 0;
+        }
+
+        .jd-slider .slide-inner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            /*border: 1px solid #888;*/
+        }
+
+        .jd-slider .slide-area > li {
+            /*border-right: 1px solid #888;*/
+            border-left: 0;
+            box-sizing: border-box;
+            /*text-align: center;*/
+        }
+
+        .jd-slider .slide-area > li:first-child {
+            border-left: 1px solid #888;
+        }
+
+        .jd-slider .slide-area > li > a {
+            display: block;
+            height: 315px;
+            /* line-height: 200px; */
+            font-size: 1em;
+            font-weight: 400;
+            outline: 0;
+            margin: 10px;
+        }
+
+        .jd-slider .slide-area > li > a span.sli-title {
+            text-align: left!important;
+            font-weight: 600;
+            font-size: 16px;
+            color: #29303b;
+            font-family: Lato, Roboto, Arial, sans-serif;
+            padding: 15px;
+            display: block;
+        }
+        
+        .jd-slider .slide-area > li > a:hover,
+        .jd-slider .slide-area > li > a span.sli-title:hover {
+            text-decoration: none;
+        }
+
+        .jd-slider .slide-area > li > a span.sli-author {
+            padding: 15px;
+            padding-top: 0;
+            font-size: 13px;
+            color: #5a5a5a;
+            margin-top: -4px;
+            display: block;
+        }
+
+        .jd-slider .controller {
+            margin: 10px 0 0;
+        }
+
+        .jd-slider.slider3 .slide-area > li,
+        .jd-slider.slider3-2 .slide-area > li,
+        .jd-slider.slider3-2b .slide-area > li,
+        .jd-slider.slider3-3 .slide-area > li {
+            width: 50%;
+        }
+
+
+        .jd-slider.slider3 .slide-area > li:nth-child(2),
+        .jd-slider.slider3-2 .slide-area > li:nth-child(2),
+        .jd-slider.slider3-2b .slide-area > li:nth-child(2),
+        .jd-slider.slider3-3 .slide-area > li:nth-child(2) {
+            display: block;
+        }
+
+        .jd-slider.slider4 .slide-area > li:first-child {
+            background-color: #a66;
+        }
+
+        .jd-slider.slider4 .slide-area > li:first-child + li {
+            background-color: #6a6;
+        }
+
+        .jd-slider.slider4 .slide-area > li:first-child + li + li {
+            background-color: #66a;
+        }
+
+        .jd-slider.slider4 .slide-area > li:first-child + li + li + li {
+            background-color: #aaa;
+        }
+
+.jd-slider .next, .jd-slider .prev {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    line-height: 68px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #0000008c;
+    outline: none;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 7px -4px #000;
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    text-align: center;
+    background: #ffffffb8;
+}
+
+.slide-inner, .slide-inner2 {
+    overflow: hidden;
+    position: relative;
+}
+
+span.details-rating {
+    padding-left: 0;
+    margin-top: -11px;
+    display: block;
+    padding: 0 15px;
+    margin-bottom: 0;
+}
+
+span.star-preview i {
+    color: #f4c150;
+}
+
+span.star-rating-numbers {
+    color: #272727;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+span.price-wrapper {
+    display: block;
+    float: right;
+    padding: 15px;
+    padding-right: 15px;
+    font-family: Lato, Roboto, Arial, sans-serif;
+}
+
+span.course-price-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+span.course-price-original {
+    text-decoration: line-through;
+    color: #444;
+    font-size: 13px;
+}
+
+span.sli-title {
+    font-family: Lato, Roboto, Arial, sans-serif;
+    color: #444;
+    display: block;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 6px 15px;
+    height: 60px;
+}
+
+span.sli-author {
+    display: block;
+    color: #444;
+    font-family: Lato, Roboto, Arial, sans-serif;
+    padding: 0 15px;
+    padding-bottom: 20px;
+}
+
+.owl-item {
+    background: #fff;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+    margin: 10px -1px;
+}
+
+.owl-nav {
+    display: none;
+}

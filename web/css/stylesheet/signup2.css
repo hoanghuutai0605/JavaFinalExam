@@ -1,0 +1,222 @@
+.signup2-fluid {
+    background: #eee url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) no-repeat;
+    /* width: 100vw; */
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(41, 48, 59, 0.93)!important;
+    opacity: 1!important;
+    transition: none!important;
+}
+
+.signup2 {
+	width: 380px;
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 10%;
+	background: #fff;
+	border-radius: 6px;
+	border-bottom: solid 1px #dedfe0;
+	box-sizing: border-box;
+	z-index: 2020;
+}
+
+.textinput {
+    border-radius: 5px!important;
+    color: #29303b!important;
+    font-size: 18px!important;
+    height: auto!important;
+    padding: 11px 45px 12px 40px!important;
+    border: 1px solid #9e9e9e!important;
+    border-radius: .25rem!important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out!important;
+}
+
+h3.signup2-header {
+    border-bottom: solid 1px #dedfe0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #29303b;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 24px 64px 24px 24px;
+}
+
+.signup2-inner {
+    padding: 25px;
+}
+
+.form-field-container {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.form-field-container:before {
+    font-family: FontAwesome;
+    color: #cacbcc;
+    content: "\f007";
+    top: 0;
+    width: 24px;
+    z-index: 2;
+}
+
+.form-field-container:before {
+    font-family: FontAwesome;
+    color: #cacbcc;
+    font-size: 16px;
+    left: 9px;
+    line-height: 1;
+    margin-top: 16px;
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    z-index: 2;
+}
+
+.form-field-container.lb-user:before {
+    content: "\f007";
+}
+
+.form-field-container.lb-mail:before {
+    content: "\f0e0";
+}
+
+.form-field-container.lb-pass:before {
+    content: "\f023";
+}
+
+.form-field-container.lb-none:before {
+    display: none;
+}
+
+/*If use common style.css and signup2.css, you can remove _custom checkbox_ style below -- Hieu*/
+
+/*custom checkbox*/
+/* The container */
+.label-container {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+}
+
+/* Hide the browser's default checkbox */
+.label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.label-container:hover input ~ .checkmark {
+  /*background-color: #ccc;*/
+  border-color: #2196F3;
+}
+
+/* When the checkbox is checked, add a blue background */
+.label-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+  border-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.label-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.label-container .checkmark:after {
+  left: 4px;
+    top: 0px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+ /*- -- - end custom checkbox - - - -*/
+
+label.lbl-accept {
+    font-size: 15px;
+    padding-left: 22px;
+}
+
+button.btn.btn-signup2 {
+    margin: 13px 0;
+    width: 100%;
+    display: block;
+    background: #ec5252;
+    color: #fff;
+    padding: .65rem .75rem;
+}
+
+button.btn.btn-signup2:hover {
+    color: #fff;
+    background-color: #992337;
+    border-color: transparent;
+}
+
+.signup2 small {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px
+}
+
+.signup2 small a {
+	padding: 0 3px;
+}
+
+.loginbox-v4__separator {
+    border-top: 1px solid #dedfe0;
+    height: 1px;
+}
+
+.signup2-footer {
+    color: #29303b;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+	padding-bottom: 8px;
+}
